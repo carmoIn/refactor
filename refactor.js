@@ -19,5 +19,8 @@ function multiplyToRandomNumber(num) {
 }
 
 function divideRandomNumber(num) {
+  if (num === 0) {
+    return `Erro: Não é possível realizar uma divisão por zero`
+  }
   return `Seu número é ${returnRandomFrom0To100(num) / num}!`;
 }
